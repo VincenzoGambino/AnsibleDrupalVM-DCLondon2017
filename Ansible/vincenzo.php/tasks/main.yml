@@ -1,0 +1,7 @@
+---
+# tasks file for vincenzo.php
+- name: Install PHP
+  apt: name=php state=latest
+
+- name: Set up PHP Info file
+  copy: src=vincenzo.php/templates/info.php dest={{ doc_root }}/info.php owner=www-data group=www-data mode=0644

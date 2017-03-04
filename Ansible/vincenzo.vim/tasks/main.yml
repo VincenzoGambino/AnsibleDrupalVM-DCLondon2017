@@ -1,0 +1,4 @@
+---
+# tasks file for vincenzo.vim
+- name: Install VIM
+  apt: name=vim state=latest
